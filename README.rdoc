@@ -1,6 +1,11 @@
 ComicVine::Connector.api_key = "0da061bf2dd....d"
+
 @s = ComicVine::Search.new
+
 @s << ComicVine::Volume
+
 @r = @s.query("iron")
+
 @v = ComicVine::Volume.load 2407
+
 @c = ComicVine::Character.load 59175
